@@ -14,6 +14,7 @@ RUN \
       curl \
       xmlstarlet \
       uuid-runtime \
+      udev \
     && \
 
 # Fetch and extract S6 overlay
@@ -28,7 +29,8 @@ RUN \
     mkdir -p \
       /config \
       /transcode \
-      /data \
+      /data/series \
+      /data/movies \
     && \
 
 # Cleanup
